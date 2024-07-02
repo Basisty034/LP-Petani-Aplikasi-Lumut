@@ -375,6 +375,19 @@
     }
     
     @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+        nav a {
+            padding: 8px 16px;
+        }
+        /* Penyesuaian untuk bagian konten utama */
+        .main-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
         .main-content {
             flex-direction: column;
             align-items: center;
@@ -383,6 +396,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 15px;
         }
         .image-row {
             flex-direction: row;
@@ -396,5 +410,35 @@
         }
         section {
             padding: 20px 10px;
+        }
+        .main-content .text-section {
+            width: 100%;
+            /* Mengisi lebar penuh */
+            margin-top: 0;
+            /* Menghapus margin atas */
+            text-align: center;
+            /* Pusatkan teks */
+        }
+        .images {
+            gap: 15px;
+            /* Mengurangi jarak antar gambar */
+        }
+        .image-row img,
+        .horizontal-images .image-item img {
+            width: 100%;
+            /* Mengisi lebar penuh */
+        }
+        /* Penyesuaian untuk gambar dalam slider atau carousel */
+        .slider-container {
+            width: 100%;
+            /* Mengisi lebar penuh */
+        }
+        .slider {
+            scroll-snap-type: none;
+            /* Nonaktifkan scroll snap */
+            overflow-x: scroll;
+            /* Aktifkan scrolling horizontal */
+            -webkit-overflow-scrolling: touch;
+            /* Smooth scrolling di iOS */
         }
     }
